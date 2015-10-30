@@ -35,7 +35,7 @@ h2 {
 .sorter div {
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 20%;
+    padding-top: 10px;
     font-size: 18px;
     font-family: sans-serif;
     color: #a0a0a0;
@@ -66,9 +66,10 @@ h2 {
 }
 
 .detail .picture {
-    margin-top: 3%;
+    padding-top: 3%;
+    margin-top: 0%;
     margin-bottom: 3%;
-    margin-left: 15%;
+    margin-left: 13%;
     margin-right: 10%;
     width: 80%;
 }
