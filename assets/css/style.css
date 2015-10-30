@@ -133,7 +133,9 @@ h2 {
         left: 0;
         width: 100%;
     }
+}
 
+@media only screen and (max-width: 600px) {
     .price {
         font-size: 6px;
     }
@@ -145,5 +147,4 @@ h2 {
     .detail .info {
         height: 150px;
     }
-
 }
