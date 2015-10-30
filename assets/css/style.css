@@ -1,0 +1,146 @@
+/** {*/
+   /*outline: 1px solid red !important;*/
+/*}*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.main {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    font-family: sans-serif;
+    margin-left: 1%;
+    margin-bottom: 0%;
+    color: #535353;
+}
+
+.sorter {
+    margin: 1%;
+    height: 40px;
+    width: 98%;
+    display: flex;
+    justify-content: flex-end
+}
+.sorter div {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 20%;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #a0a0a0;
+}
+
+.sorter .selected {
+    color: black;
+    background-color: #ffba13;
+}
+
+.room {
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+	width: 98%;
+	display: flex;
+    background: white;
+}
+
+.name {
+    padding-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 0%;
+}
+
+.picture {
+    width: 43.1%;
+}
+
+.detail .picture {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.picture img {
+    max-width: 100%;
+    display: block;
+}
+
+.info {
+    position:relative;
+    padding: 2%;
+    width: 56.9%;
+}
+
+.detail .info {
+    width: 100%;
+    height: 300px;
+}
+
+.address {
+    padding-left: 1%;
+    color: grey;
+}
+
+.detail .address {
+    width: 100%;
+}
+
+.price {
+    position:absolute;
+    right:5%;
+    bottom:5%;
+    color: #ffd019;
+    font-size: 12px;
+}
+
+.price .number {
+    font-family: Sans-serif;
+    font-weight: bold;
+    font-size: 47px;
+}
+
+.price .unit {
+    float: right;
+}
+
+.highlighted {
+    background-color: #e1e1e1;
+}
+
+.highlighted .name{
+    text-decoration: underline;
+}
+
+.pagination {
+    float: right;
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        left: 0;
+        width: 100%;
+    }
+
+    .price {
+        font-size: 6px;
+    }
+
+    .price .number {
+        font-size: 20px;
+    }
+
+    .detail .info {
+        height: 150px;
+    }
+
+}

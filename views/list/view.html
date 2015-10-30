@@ -1,0 +1,35 @@
+<div>
+    <h2>{{rooms[0].state}}: {{rooms.length}} Apartments</h2>
+    <div>
+        <div class="sorter">
+            <div data-ng-class="{'selected': isSelected('-popularity')}" data-ng-click="select('-popularity')">Popularity</div>
+            <div data-ng-class="{'selected': isSelected('-price')}" data-ng-click="select('-price')">Price</div>
+        </div>
+        <div class="room" data-ng-repeat="room in rooms | orderBy:order() | showPage:currentPage:pageSize"
+             data-ng-class="{'highlighted' : isHighlighted(room.id)}"
+             data-ng-mouseenter="highlight(room.id)"
+             data-ng-mouseleave="highlight(null)"
+             data-ng-click="openDetail(room)">
+            <div class="picture">
+                <img src="{{room.image}}" alt="room picture">
+            </div>
+            <div class="info">
+                <h1 class="name">{{room.name}}</h1>
+                <hr>
+                <span class="address"><small>{{room.area}}</small></span>
+                <br>
+                <span class="address"><small>{{room.state}}</small></span>
+                <div class="price">
+                    <span>From</span><span class="number">${{room.price}}</span>
+                    <br>
+                    <span class="unit">USD / Month</span>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button data-ng-disabled="!hasPrev()" data-ng-click="prev()">Previou</button>
+            <span>{{currentPage}}/{{maxPage}}</span>
+            <button data-ng-disabled="!hasNext()" data-ng-click="next()">Next</button>
+        </div>
+    </div>
+</div>
